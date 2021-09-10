@@ -1,13 +1,7 @@
 <%@ page import="cg.wbd.grandemonstration.service.CustomerService" %>
 <%@ page import="cg.wbd.grandemonstration.service.CustomerServiceFactory" %>
 <%@ page import="cg.wbd.grandemonstration.model.Customer" %>
-<%!
-    private CustomerService customerService = CustomerServiceFactory.getInstance();
-%>
-<%
-    Long id = Long.valueOf(request.getParameter("id"));
-    Customer customer = customerService.findOne(id);
-%>
+
 <form action="/customers" method="post">
 <fieldset>
     <legend>Customer Information</legend>
